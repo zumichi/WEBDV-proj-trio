@@ -1,0 +1,37 @@
+body {
+  background: #151515;
+  margin: 0;
+  font-size: 22px;
+}
+    
+button {
+  border: solid 1px black;
+  font-size: 22px;
+  padding: 10px;
+}
+    
+div {
+  border: solid 1px rgb(0, 71, 171);
+  background: #4077ff;
+  color: white;
+  padding: 20px 20px;
+}
+    
+.box {
+  width: 100vw;
+}
+
+.hidden {
+  //display: none;
+  overflow: hidden;
+}
+    
+div input {
+  position: absolute;
+  left: 170px;
+  background: none;
+  color: white;
+  border: solid 1px white;
+  border-radius: 10px;
+  padding-left: 7px;
+}

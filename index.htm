@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Compute your Average</h1>
+    <form id="student">
+      <label for="name">Student Name: </label>
+      <input type="text" id="name" required><br>
+    </form>
+    <h3>Your Grades:</h3>
+    <p id="mathGrade">Math: </p>
+    <p id="engGrade">English: </p>
+    <p id="filGrade">Filipino: </p>
+    <p><button type="submit" onclick="dropHidden()">
+      Start computing my Average!
+    </button></p>
+  </div>
+  
+  <div class="hidden" id="hidden">
+    <form id="student">
+      <h3>
+        Choose a Subject and Fill all the necessary fields 
+      </h2>
+      <label>
+        <input type="radio" name="subj" value="math" required> Math
+      </label><br>
+        <input type="radio" name="subj" value="eng" required> English
+      </label><br>
+        <input type="radio" name="subj" value="fil" required> Filipino
+      </label><br>
+      
+      <label for="quiz">Quizes:</label>
+      <input type="number" id="quiz" required><br>
+
+      <label for="act">Activities:</label>
+      <input type="number" id="act" required><br>
+
+      <label for="proj">Project:</label>
+      <input type="number" id="proj" required><br>
+
+      <label for="attnd">Attendance:</label>
+      <input type="number" id="attnd" required><br>
+
+      <label for="exam">Exam:</label>
+      <input type="number" id="exam" required><br>
+
+      <button type="submit" onclick="getGrade()">
+        Submit
+      </button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
